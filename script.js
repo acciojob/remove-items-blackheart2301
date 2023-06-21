@@ -1,7 +1,7 @@
 //your JS code here. If required.
 
 const drop = document.querySelector('#colorSelect');
-let output = selectElement.value;
+let output = drop.value;
 
 function remove(){
      if(output=="Red" && drop.hasChildNodes()){
