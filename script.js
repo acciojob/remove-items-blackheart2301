@@ -1,21 +1,19 @@
 //your JS code here. If required.
-const drop= document.getElementbyId("colorSelect");
+
+const drop = document.querySelector('#colorSelect');
+let output = selectElement.value;
 
 function remove(){
-     if(drop.textContent=="Red"){
-		 let choosen= drop.getElementbyId(first);
-		 drop.removeChild('choosen');
+     if(output=="Red" && drop.hasChildNodes()){
+		 drop.removeChild(drop.children[0]);
 	 }
-	if(drop.textContent=="Green"){
-		 let choosen= drop.getElementbyId(second);
-		 drop.removeChild('choosen');
+	if(output=="Green" && drop.hasChildNodes()){ 
+		 drop.removeChild(drop.children[1]);
 	}
-	if(drop.textContent=="White"){
-		let choosen= drop.getElementbyId(second);
-		 drop.removeChild('choosen');
+	if(output=="White" && drop.hasChildNodes()){
+		 drop.removeChild(drop.children[2]);
 	}	 
-	if(drop.textContent=="Black"){
-		let choosen= drop.getElementbyId(second);
-		 drop.removeChild('choosen');
+	if(output=="Black" && drop.hasChildNodes()){
+		 drop.removeChild(drop.children[3]);
 	}
 }
